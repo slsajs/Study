@@ -90,7 +90,7 @@ public class encryption{
     }
 
     public  static String sha256(String msg) throws NoSuchAlgorithmException {
-        MessageDigest md = MessageDigest.getInstance("SHA-256");
+        MessageDigest md = MessageDigest.getInstance("SHA-512");
         md.update(msg.getBytes());
         return byteToHexString(md.digest());
     }
